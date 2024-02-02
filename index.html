@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo HTML - Página de Agendamento e Confirmação</title>
+    <!-- Link para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main-css.css">
+
+    <!-- Descrição e autor da página -->
+    <meta name="description" content="Página de agendamento e confirmação de eventos">
+    <meta name="author" content="Fulano">
+
+  </head>
+
+  <body>
+    <div class="tab">
+      <!-- Botões de seleção das abas -->
+      <button class="tablinks" onclick="openTab(event, 'Agendamento')">Agendamento</button>
+      <button class="tablinks" onclick="openTab(event, 'Confirmacao')">Confirmação</button>
+    </div>
+
+    <div id="Agendamento" class="tabcontent">
+      <table>
+        <tr>
+          <th>Agendamento</th>
+          <td>SP-1</td>
+        </tr>
+        <tr>
+          <th>Colaborador</th>
+          <td>Magnolia de Oliveira</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Confirmacao" class="tabcontent">
+      <table>
+        <tr>
+          <th>Confirmação</th>
+          <td>SP-1</td>
+        </tr>
+        <tr>
+          <th>Colaborador</th>
+          <td>Magnolia de Oliveira</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Link para os arquivos JavaScript do Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="main-js.js"></script>
+  </body>
+</html>
