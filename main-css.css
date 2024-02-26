@@ -1,4 +1,80 @@
-      /* Esconde as abas de conteúdo */
-      .tabcontent {
-        display: none;
-      }
+/* Redefinição de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 120px;
+    margin-right: 100px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  /* Menu de navegação */
+   
+  /* Menu de navegação */
+  
+  /* Conteúdo principal */
+  main {
+    padding: 20px;
+  }
+  
+  /* Título da página */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Parágrafos */
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  /* Redefinição de estilos padrão */
+
+  
+  /* Container */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+  
+  /* Conteúdo */
+  .content {
+    margin: 2vw;
+    padding: 2vw;
+    max-width: 80vw;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .steal{
+    display: none;
+  }
+
+
+
+  
+  
+
+  
