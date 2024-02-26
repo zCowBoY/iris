@@ -1,37 +1,31 @@
 
-// Seleciona os elementos a partir de seus IDs
-const agendamentoTab = document.getElementById("Agendamento");
-const confirmacaoTab = document.getElementById("Confirmacao");
-const selecaoBtns = document.querySelectorAll(".tablinks");
 
-// Variável para guardar a última aba selecionada
-let ultimaAbaSelecionada = null;
+const handleSubmit = (event) =>{
+    event.preventDefault();
 
-// Função que troca para a aba selecionada
-function openTab(event, tabName) {
-  // Verifica se a aba clicada é a mesma que já está ativa
-  if (ultimaAbaSelecionada === tabName) {
-    // Esconde a aba clicada
-    document.getElementById(tabName).style.display = "none";
-    // Desmarca o botão de seleção
-    event.currentTarget.classList.remove("active");
-    // Atualiza a variável da última aba selecionada
-    ultimaAbaSelecionada = null;
-  } else {
-    // Esconde todas as abas
-    agendamentoTab.style.display = "none";
-    confirmacaoTab.style.display = "none";
-
-    // Remove a classe "active" de todos os botões de seleção
-    selecaoBtns.forEach(btn => {
-      btn.classList.remove("active");
-    });
-
-    // Mostra a aba selecionada e adiciona a classe "active" ao botão correspondente
-    document.getElementById(tabName).style.display = "block";
-    event.currentTarget.classList.add("active");
-
-    // Atualiza a variável da última aba selecionada
-    ultimaAbaSelecionada = tabName;
-  }
+    alert('Enviando......')
 }
+
+document.querySelector('form').addEventListener('submit', handleSubmit)
+
+// **Função para alternar a visibilidade de dois elementos**
+
+const botaoAlternar = document.getElementById("botao-alternar");
+const elemento1 = document.getElementById("elemento-1");
+const elemento2 = document.getElementById("elemento-2");
+
+botaoAlternar.addEventListener("click", function () {
+
+    if (elemento2.classList.contains("steal")) {
+        elemento2.classList.remove("steal");
+        elemento1.classList.add("elemento-escondido");
+    }
+    else if (elemento2.classList.contains("elemento-escondido")) {
+        elemento2.classList.remove("elemento-escondido");
+        elemento1.classList.add("elemento-escondido");
+    }
+    else {
+        elemento2.classList.add("elemento-escondido");
+        elemento1.classList.remove("elemento-escondido");
+    }
+});
